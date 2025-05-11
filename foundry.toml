@@ -3,6 +3,7 @@ src = "src"
 out = "out"
 libs = ["lib"]
 evm_version = "prague"
+match-path = "test/**/*.t.sol"
 
 [rpc_endpoints]
 sepolia = "${SEPOLIA_RPC_URL}"
