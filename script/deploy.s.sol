@@ -4,13 +4,10 @@ pragma solidity ^0.8.20;
 import "forge-std/Script.sol";
 import "../src/SponsoredCall.sol";
 import {TestToken} from "../test/token/TestToken.sol";
-import {MessageHashUtils} from "@openzeppelin/contracts/utils/cryptography/MessageHashUtils.sol";
 
-contract SponsoredCallScript is Script {
+contract deployScript is Script {
     uint256 alicePK = vm.envUint("ALICE_PK");
     address alice = vm.envAddress("ALICE");
-
-    address bob = vm.envAddress("BOB");
 
     SponsoredCall public sponsoredCall;
 
